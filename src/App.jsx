@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Child from './Child';
 
 export default class App extends Component {
   constructor(){
@@ -19,6 +20,8 @@ export default class App extends Component {
          <h3>App组件</h3>
          <p>{name}</p>
          <button onClick={this.handdleClick}>change name</button>
+         <hr />
+         <Child name="tom" age={19}/>
       </div>
     )
   }
